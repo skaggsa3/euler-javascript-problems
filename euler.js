@@ -31,5 +31,18 @@ while (count <= 500) {
     count = sum;
 }
 
-// Problem 3 -- What is the largest prime factor of the number 600851475143 ? - Started but hasn't been completed.
+// Problem 3 -- What is the largest prime factor of the number 600851475143 ? - 1000 was used as a place holder for the original number as it would have 
+// taken way too long to run
+var numFactored = 1013;
+var divisor = 2;
 
+while (divisor < numFactored){
+    if ((numFactored / divisor) % 2 == 0){
+        numFactored /= divisor;
+    }
+    else {
+        divisor++;
+    }
+}
+
+console.log(divisor);
